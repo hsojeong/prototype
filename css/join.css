@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+body {background: #f8f8fd;}
+input, button, select , textarea {
+    cursor: pointer;
+}
+
+#joinsection { 
+    padding:140px ;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#joinsection b {
+    font-size: 15px;
+    color: navy;
+}
+#joinsection h2 {
+    text-align: center;
+    font-size:30px; 
+    color: #282866;
+    margin: 30px 0;
+    position: relative;
+}
+#joinsection h2::after {
+    content: '';
+    width: 230px; height: 2px;
+    background: #282866; 
+    position:absolute; top: 50%; left: -80px;
+    margin-top: -0.5; 
+}
+#joinsection h2::before {
+    content: '';
+    width: 230px; height: 2px;
+    background: #282866; 
+    position:absolute; top: 50%; right: -80px;
+    margin-top: -0.5; 
+    } 
+
+#joinbox p:first-child {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 19px;
+}
+#joinbox .text {
+    display: block;
+}
+#joinbox .text input {
+    width: 45%;
+    padding: 10px;
+    margin-top: 5px;
+}    
+#joinbox .text span {
+    margin: 8px 0;
+    opacity: 0;
+    display: block;
+    color: #282866;
+    transition: all 1s;
+    font-size: 13px;
+}
+#joinbox .text input:focus {
+    background: #e7e7f9; 
+    outline: 1px solid #282866;
+    border: none;
+}
+#joinbox .text input:focus~span {
+    display: block;
+    opacity: 1;
+} 
+#joinbox button {
+   background : #282866;
+   color: #e7e7f9;
+   width: 15%;
+   padding: 7px;
+   margin-left: 15px;
+   border-radius: 5px;
+}
+#joinbox .email input:focus, #joinbox .email select:focus {
+    background: #e7e7f9; 
+    outline: 1px solid #282866;
+    border: none;
+}
+#joinbox .email select {
+    font-size: 13px;
+    width: 200px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#personal p:first-child {
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#personal .nickname textarea {
+    width: 60%;
+    padding: 15px;
+    border: 1px solid #282866;
+    border-radius: 3px;
+    display: block;
+    margin: 20px 0;
+    outline: none;
+}
+#personal .nickname textarea:focus {
+    background: #e7e7f9; 
+}
+#personal .gender div {
+    margin: 20px 0;
+}
+#personal .file  {
+    padding:  15px 0;
+}
+#personal .file input {
+    display: block;
+    margin: 20px;
+}
+#personal .file span {
+    color: #b9b9f5;
+    font-size: 14px;
+}
+
+#agree p:first-child {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#agree p {
+    margin: 5px;
+}
+#agree p input {
+    margin-right: 5px;
+}
+#agree p a {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 7px;
+}
+#agree p label {
+    font-size: 15px;
+}
+#btn {text-align: center;}
+#btn button:first-child {
+    width: 40%;
+    background: #e7e7f9;
+    color: #282866;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 3px;
+    margin: 30px 5px;
+}
+#btn button:last-child {
+    width: 40%;
+    background: orange;
+    color: #282866;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-weight: bold;
+    margin: 30px 5px;
+}

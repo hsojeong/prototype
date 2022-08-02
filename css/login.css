@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+body {background: #f8f8fd;}
+
+#loginsection { 
+    padding:170px ;
+    text-align: center;
+}
+
+#loginsection h2 {
+    font-size:30px; 
+    color: #282866;
+    margin: 30px 0;
+    position: relative;
+}
+
+#loginsection h2::after {
+    content: '';
+    width: 180px; height: 2px;
+    background: #282866; 
+    position:absolute; top: 50%; left: 130px;
+    margin-top: -0.5; 
+}
+
+#loginsection h2::before {
+    content: '';
+    width: 180px; height: 2px;
+    background: #282866; 
+    position:absolute; top: 50%; right: 130px;
+    margin-top: -0.5; 
+    }       
+    
+#loginsection #id , #loginsection #pw {
+    width: 50%;
+    border: 1px solid #282866;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    outline: none ;
+} 
+#loginsection #id:focus , #loginsection #pw:focus {
+    background: #e7e7f9;
+    outline: 1px solid #282866;
+}
+#loginsection label {
+    font-size: 14px;
+    color: #282866;
+}
+#loginsection span {
+    margin-left: 160px;
+    font-size: 14px;
+    color: #282866;
+}
+#loginsection button {
+    width: 50%;
+    height: 65px;
+    background: orange;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+#loginsection div a {
+   width: 40px;
+   margin: 10px 10px 0;
+}
